@@ -8,8 +8,8 @@ This document tracks the end-to-end development lifecycle of the **`regexml`** l
 
 | Metric | Status |
 |---|---|
-| **Current Phase** | Phase 6: Packaging, Documentation & Release |
-| **Overall Completion** | 85% |
+| **Current Phase** | Completed / Released (v0.1.0) |
+| **Overall Completion** | 100% |
 | **Target Python Version** | Python 3.9+ |
 | **Dependencies** | Python Standard Library (`re`, `typing`, `dataclasses`) |
 
@@ -87,12 +87,14 @@ This document tracks the end-to-end development lifecycle of the **`regexml`** l
 
 ---
 
-### Phase 6: Packaging, Documentation & Release ⏳ (In Progress)
+### Phase 6: Packaging, Documentation & Release ✅ (Completed)
 - [x] Write full API reference in `README.md` with copy-pasteable examples
 - [x] Setup `unittest` test suite with 23 passing test cases
-- [ ] Verify package build with `python -m build`
-- [ ] Add PyPI publishing workflow / instructions
-- [ ] Final code review and version `0.1.0` tag
+- [x] Verify package build with `python -m build` (Wheel and Sdist built)
+- [x] Add PyPI publishing workflow / instructions (.github/workflows/publish.yml)
+- [x] Published official release `0.1.0` to PyPI: [pypi.org/project/regexml/0.1.0/](https://pypi.org/project/regexml/0.1.0/)
+- [x] Created GitHub Release `v0.1.0` tag
+- [x] Stored `PYPI_API_TOKEN` secret in GitHub Repository Secrets for automated CI/CD
 
 ---
 
@@ -109,3 +111,5 @@ This document tracks the end-to-end development lifecycle of the **`regexml`** l
 | **2026-11-01** | Created public GitHub repository [visitishan/regexml](https://github.com/visitishan/regexml) and pushed initial commit. | Done |
 | **2026-11-01** | Implemented core engine: `models.py`, `extractor.py`, `nested.py`, `inspector.py`, `attributes.py`, `utils.py`. | Done |
 | **2026-11-01** | Added 23 unit tests across 5 test suites (`test_basic.py`, `test_nested.py`, `test_chaining.py`, `test_malformed.py`, `test_inspector.py`) — 100% passed. | Done |
+| **2026-11-01** | Published package `regexml 0.1.0` live to PyPI ([pypi.org/project/regexml/](https://pypi.org/project/regexml/)). | Done |
+| **2026-11-01** | Verified live installation via `pip install regexml` and tagged `v0.1.0` on GitHub. | Done |
