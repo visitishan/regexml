@@ -20,6 +20,8 @@ This document tracks the end-to-end development lifecycle of the **`regexml`** l
 ### Phase 1: Specification & Project Foundation ⏳ (In Progress)
 - [x] Create Technical Specification document (`SPECIFICATION.md`)
 - [x] Create Progress Tracking document (`PROGRESS.md`)
+- [x] Initialize Git repository & `.gitignore`
+- [x] Create GitHub repository: [visitishan/regexml](https://github.com/visitishan/regexml)
 - [ ] Initialize Python package layout (`src/regexml/`, `tests/`)
 - [ ] Create `pyproject.toml` with build metadata, dependencies, and linting tools
 - [ ] Create initial `README.md` with problem statement and planned syntax
@@ -104,3 +106,4 @@ This document tracks the end-to-end development lifecycle of the **`regexml`** l
 | **2026-11-01** | Added `XMLText(str)` subclass for fluent dot-syntax (`my_text.tagvalue("div")`) and finalized Outermost Balanced Depth Scanner algorithm in spec. | Done |
 | **2026-11-01** | Designed Method Chaining (`.tagvalue().tagvalue()`), Safe Chaining (no AttributeError), and Path shorthand (`"div/name/first_name"`). | Done |
 | **2026-11-01** | Designed Truncated XML Graceful Recovery (`allow_unclosed=True`, `is_truncated`) and Tag Inspection & Hierarchy Engine (`check_tags()` + `.tree()`). | Done |
+| **2026-11-01** | Created public GitHub repository [visitishan/regexml](https://github.com/visitishan/regexml) and pushed initial commit. | Done |
