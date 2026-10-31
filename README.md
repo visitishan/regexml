@@ -1,9 +1,10 @@
 # regexml 🚀
 
+[![PyPI version](https://img.shields.io/pypi/v/regexml.svg)](https://pypi.org/project/regexml/)
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A lightweight, fault-tolerant, text-first XML extraction library for Python.
+A lightweight, fault-tolerant, text-first XML extraction library for Python. Available on PyPI: **[pypi.org/project/regexml](https://pypi.org/project/regexml/)**.
 
 Unlike traditional XML parsers (`xml.etree.ElementTree`, `lxml`) that enforce strict document validation and crash with `ParseError` on incomplete or malformed markup, **`regexml`** treats XML purely as plain text. It extracts values directly using regular expressions and resilient pattern matching.
 
@@ -123,6 +124,15 @@ print(report.unclosed_tags) # ['user', 'bio']
 # Print terminal ASCII tree:
 print(report.tree())
 ```
+
+**Output:**
+```text
+└── user (unclosed)
+    ├── id
+    └── bio (unclosed)
+```
+
+The tree instantly visualizes the markup hierarchy and flags unclosed tags, making it easy to pinpoint where the XML stream cut off.
 
 ---
 
